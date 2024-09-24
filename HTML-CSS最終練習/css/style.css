@@ -1,0 +1,434 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 以上 CSS reset  */
+
+*{
+    font-family: 'Microsoft JhengHei UI';
+    box-sizing: border-box; /* 設置所有元素使用 border-box 模型 */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* 配合menu對瀏覽器整體做平滑滾動 */
+
+.wrap{
+    margin: 0 auto;
+    width: 1920px;
+    background-color: #FFFFFF;
+}
+
+.link{
+    background-color: #F6F6F8;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link_item{
+    margin-right: 405px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+}
+
+.link_item a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.link_item_fb{
+    color: #4267B2;
+}
+
+.link_item_twitter{
+    color: #1DA1F2;
+}
+
+.link_item_icon{
+    margin-right: 5px;
+}
+
+.link_item_line{
+    border: 0.5px solid #CCCCCC;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.menu{
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+.menu_logo{
+    margin-left: 404px;
+    margin-top: 18px;
+}
+
+.menu_logo img{
+    width: 150px;
+    height: 36px;
+}
+
+.menu_list{
+    margin-right: 417px;
+}
+
+.menu_list ul{
+    display: flex;
+}
+
+.menu_list li{
+    margin-right: 21px;
+    margin-left: 21px;
+    padding-top: 26px;
+    padding-bottom: 30px;
+}
+
+.menu_list a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #00251A;
+}
+
+.menu_list li:hover{
+    border-bottom: 4px solid #00CC99;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    width: 1920px;
+    height: 390px;
+    margin: 0 auto;
+    display: block;
+}
+
+.banner_decoration{
+    width: 1920px;
+    height: 139px;
+    background-color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 125px;
+}
+
+.banner_title{
+    color: #1E1E1E;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+    margin-top: 27px;
+    margin-left: 498px;
+}
+
+.product{
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.product_item{
+    width: 350px;
+    border-bottom: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-radius: 5px; /* 添加圓角 */
+    box-shadow: 0px 1.5px 1.5px #d0d0d0; /* 添加下陰影 */
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.product_item,
+.product_item h2,
+.product_item p{
+    transition: transform 0.5s ease;;
+}
+
+.product_item:hover,
+.product_item:hover h2,
+.product_item:hover p{
+    transform: scale(1.05);
+}
+
+.product_item h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.product_item p{
+    width: 350px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0px 20px 20px 20px;
+}
+
+.html_logo{
+    margin: 20px 110px 11px 110px;
+}
+
+.rwd_logo{
+    margin: 25px 88px 2px 88px;
+}
+
+.jquery_logo{
+    margin: 68px 28px 43px 28px;
+}
+
+.comparison{
+    margin: 0 auto;
+}
+
+.comparison h2{
+    width: 288px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+}
+
+.comparison_table{
+    width: 920px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.comparison_table th{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 17px;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.comparison_table td{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 17px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.comparison_table .comparison_table_emphasize{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #00CC99;
+}
+
+.form_container{
+    background: linear-gradient(to bottom, #E4FFF8, #A2DDCE);
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.form_container h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    margin-bottom: 28px;
+
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form_information{
+    display: flex;
+    flex-direction: column;    
+}
+
+.form_information label{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    margin-bottom: 8px;
+}
+
+.form_information input{
+    width: 351px;
+    height: 38px;
+    border: 1px solid #AAAAAA;
+    border-radius: 3px; /* 添加圓角 */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+}
+
+.form_notes{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_notes label{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    margin-bottom: 8px;
+}
+
+.form_notes textarea{
+    width: 350px;
+    height: 200px;
+    border: 1px solid #AAAAAA;
+    border-radius: 3px; /* 添加圓角 */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    margin-bottom: 16px;
+    resize: none; /* 禁用縮放 */
+}
+
+.form_button{
+    display: block;
+    width: 159px;
+    height: 38px;
+    border: 1px solid #00251A;
+    border-radius: 3px; /* 添加圓角 */
+    margin: 0 auto;
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #FFFFFF;
+    background-color: #00251A;
+}
+
+.form_button:hover{
+    background-color: #E4FFF8; /* 背景變為淡綠色 */
+    color: #00251A; /* 文字變為深綠色 */
+    cursor: pointer; /* 鼠標變成點擊手勢 */
+}
+
+.top_button{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #00251A;
+    border-radius: 50%;
+    background-color: #00251A;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.top_button a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.top_button:hover,
+.top_button:hover a{
+    background-color: #E4FFF8; /* 背景變為淡綠色 */
+    color: #00251A; /* 文字變為深綠色 */
+    cursor: pointer; /* 鼠標變成點擊手勢 */
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+.footer_logo{
+    margin-left: 404px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.footer_list{
+    margin-right: 405px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+}
+
+.footer_list a{
+    text-decoration: none;
+    color: #00CC99;
+}
+
+.footer_list a:hover{
+    color: #009100;
+    background: #DFFFDF;
+}
