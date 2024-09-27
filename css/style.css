@@ -54,11 +54,6 @@ table {
     box-sizing: border-box; /* 設置所有元素使用 border-box 模型 */
 }
 
-html {
-    scroll-behavior: smooth;
-}
-/* 配合menu對瀏覽器整體做平滑滾動 */
-
 .wrap{
     margin: 0 auto;
     width: 1920px;
@@ -384,18 +379,12 @@ html {
     border-radius: 50%;
     background-color: #00251A;
     text-align: center;
-    padding-top: 17px;
-}
-
-.top_button a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 16px;
+    font-style: 16px;
     font-weight: 400;
+    color: #FFFFFF;
 }
 
-.top_button:hover,
-.top_button:hover a{
+.top_button:hover{
     background-color: #E4FFF8; /* 背景變為淡綠色 */
     color: #00251A; /* 文字變為深綠色 */
     cursor: pointer; /* 鼠標變成點擊手勢 */
