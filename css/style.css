@@ -142,6 +142,11 @@ table {
     border-bottom: 4px solid #00CC99;
 }
 
+.swiper {
+    width: 1920px;
+    height: 390px;
+  }
+
 .banner{
     position: relative;
 }
@@ -150,15 +155,15 @@ table {
     width: 1920px;
     height: 390px;
     margin: 0 auto;
-    display: block;
 }
 
 .banner_decoration{
     width: 1920px;
     height: 139px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.45);
     position: absolute;
     top: 125px;
+    z-index: 9999;
 }
 
 .banner_title{
@@ -168,6 +173,7 @@ table {
     line-height: 43px;
     margin-top: 27px;
     margin-left: 498px;
+    z-index: 10000;
 }
 
 .product{

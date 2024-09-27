@@ -12,4 +12,5 @@ $(document).ready(function() {
     $('#scrollToTop').click(function() {
         $('html, body').animate({scrollTop: 0}, 700); // 700毫秒內滾動到頂部
     });
+
 });

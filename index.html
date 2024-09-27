@@ -6,6 +6,12 @@
     <title>html-sample-homework</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.css">
+    <!-- <link rel="stylesheet" href="css/swiper.css"> -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
     <script src="script/jquery.js"></script>
 </head>
 <body>
@@ -35,7 +41,22 @@
         </header>
         <section>
             <div  class="banner">
-                <img src="images/header_background.png" alt="banner">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide"><img src="images/header_background.png" alt="banner"></div>
+                        <div class="swiper-slide"><img src="images/header_background-2.jpg" alt="banner"></div>
+                        <div class="swiper-slide"><img src="images/header_background-3.jpg" alt="banner"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+
                 <div class="banner_decoration">
                     <h1 class="banner_title">六角學院<br>讓您奠定良好的前端基礎</h1>
                 </div>
@@ -160,6 +181,26 @@
         </footer>
     </div>
     <script src="script/lightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="script/swiper.js"></script> -->
     <script src="script/all.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 4000, // 每次切換的延遲時間（毫秒）
+                disableOnInteraction: false, // 用戶操作後是否禁用自動播放
+            },
+            speed: 1200,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
