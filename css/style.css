@@ -123,11 +123,35 @@ table {
     display: flex;
 }
 
-.menu_list li{
+.menu_list > ul > li{
     margin-right: 21px;
     margin-left: 21px;
     padding-top: 26px;
     padding-bottom: 30px;
+    position: relative;
+}
+
+/* 折疊式選單 */
+
+.menu_list > ul > li > ul{
+    width: 150px;
+    display: none;
+    margin: 0px;
+    position: absolute;
+    z-index: 10000;
+    top: 76px;
+
+}
+
+.menu_list_open{
+    margin: 0px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #fff;
+    color: #00251A;
+    padding: 10px;
+    border-radius: 1px;
 }
 
 .menu_list a{

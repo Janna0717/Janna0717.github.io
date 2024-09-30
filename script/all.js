@@ -13,4 +13,12 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0}, 700); // 700毫秒內滾動到頂部
     });
 
+    // 折疊式選單
+    $('.menu_list > ul > li > a').click(function(event) {
+        event.preventDefault();
+        $(this).parent().siblings().find('ul').slideUp(150);
+        $(this).parent().find('ul').slideToggle(150);
+    });
+
+
 });
