@@ -161,6 +161,10 @@ table {
     color: #00251A;
 }
 
+.menu_list li{
+    border-bottom: 4px solid transparent;
+}
+
 .menu_list li:hover{
     border-bottom: 4px solid #00CC99;
 }
