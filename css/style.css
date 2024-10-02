@@ -50,7 +50,7 @@ table {
 /* 以上 CSS reset  */
 
 *{
-    font-family: 'Microsoft JhengHei UI';
+    font-family: 'Microsoft JhengHei UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     box-sizing: border-box; /* 設置所有元素使用 border-box 模型 */
 }
 
@@ -104,24 +104,18 @@ table {
 }
 
 .menu{
-    height: 76px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #FFFFFF;
 }
 
 .menu_logo{
-    margin-left: 404px;
     margin-top: 18px;
 }
 
 .menu_logo img{
     width: 150px;
     height: 36px;
-}
-
-.menu_list{
-    margin-right: 417px;
 }
 
 .menu_list ul{
