@@ -22,9 +22,19 @@ $(document).ready(function() {
         }
 
         event.preventDefault();
+        // 關閉其他已打開的子選單
         $(this).parent().siblings().find('ul').slideUp(150);
+        // 切換當前選單的子選單
         $(this).parent().find('ul').slideToggle(150);
     });
 
+    // 點擊其他地方關閉選單
+    $(document).click(function(event) {
+        // 檢查點擊的目標是否在選單內
+        if (!$(event.target).closest('.menu_list').length) {
+            // 關閉所有子選單
+            $('.menu_list ul > li > ul').slideUp(150);
+        }
+    });
 
 });
