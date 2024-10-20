@@ -154,34 +154,38 @@
             </ul>
         </div>
         <div class="reservation">
-            <h3>我們的位置不太夠坐<br>要不要先定位呢？</h3>
-            <img src="/hex-rwd/images/Map.png" alt="our address">
-            <div class="reservation-list">
-                <form>
-                    <label for="name">姓名:</label>
-                    <input type="text" id="name" name="name"  placeholder="六角講師吃尾牙" required><br><br>
-                  
-                    <label for="phone">電話:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="02-1234567" required><br><br>
-                  
-                    <label for="email">信箱:</label>
-                    <input type="email" id="email" name="email" placeholder="test@gmail.com" required><br><br>
-                  
-                    <label for="guests">人數:</label>
-                    <input type="number" id="guests" name="guests" min="1" max="20" required><br><br>
-                  
-                    <label>是否需要素食?</label><br>
-                    <div class="radio-group">
-                        <input type="radio" id="vegetarian_yes" name="vegetarian" value="yes">
-                        <label for="vegetarian_yes">是</label>
+            <h3>我們的位置不太夠坐<br>要不要先訂位呢？</h3>
+            <div class="reservation-rwd">
+                <img src="/hex-rwd/images/Map.png" alt="our address">
+                <div class="reservation-list">
+                    <form>
+                        <label for="name">姓名:</label>
+                        <input type="text" id="name" name="name"  placeholder="六角講師吃尾牙" required><br><br>
+                    
+                        <label for="phone">電話:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="02-1234567" required><br><br>
+                    
+                        <label for="email">信箱:</label>
+                        <input type="email" id="email" name="email" placeholder="test@gmail.com" required><br><br>
+                    
+                        <label for="guests">人數:</label>
+                        <input type="number" id="guests" name="guests" min="1" max="20" placeholder="最多可預訂20位" required><br><br>
+                    
+                        <label>是否需要素食?</label><br>
+                        <div class="radio-group">
+                            <input type="radio" id="vegetarian_yes" name="vegetarian" value="yes">
+                            <label for="vegetarian_yes">是</label>
 
-                        <input type="radio" id="vegetarian_no" name="vegetarian" value="no" checked>
-                        <label for="vegetarian_no">否</label>
-                    </div><br><br>
-                  
-                    <input class="input-cancel" type="submit" value="取消">
-                    <input class="input-check" type="submit" value="送出">
-                  </form>
+                            <input type="radio" id="vegetarian_no" name="vegetarian" value="no" checked>
+                            <label for="vegetarian_no">否</label>
+                        </div><br><br>
+                        
+                        <div class="input-container">
+                            <input class="input-cancel" type="submit" value="取消">
+                            <input class="input-check" type="submit" value="送出">
+                        </div>                    
+                    </form>
+                </div>
             </div>
         </div>
         <div class="footer"></div>
