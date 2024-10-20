@@ -1,0 +1,423 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET 結束 */
+
+/* 將所有元素及其伺服元素都套用 box-sizing: border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* 手機版 (Mobile First) */
+body {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif, 'MicrosoftJhengHeiRegular';
+	background-color: #efe9e7;
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* 平板版 (Tablet) */
+  @media (min-width: 768px) {
+	body {
+	  font-size: 16px;
+	  /* 針對平板的調整 */
+	}
+  }
+  
+  /* 桌面版 (Desktop) */
+  @media (min-width: 1024px) {
+	body {
+	  font-size: 16px;
+	  /* 針對桌面的設計 */
+	}
+  }
+
+/* 外層容器 */
+.wrap {
+	max-width: 960px;
+	margin: 0 auto;
+  }
+   
+ 
+/* 頂端選單  */
+.nav-bar {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.nav-bar i {
+	color: #fff;	
+}
+
+/* 上半部封面 */
+.header {
+	background-image: url("/hex-rwd/images/header_mobile.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 3em 1em;
+}
+
+@media (min-width: 768px) {
+	.header {
+		background-image: url("/hex-rwd/images/header_desktop.png");			
+	}
+  }
+
+.header-banner {
+	background-color: rgba(0, 0, 0, 0.35);
+	padding: 1.5em 0.5em;
+	color: #fff;
+	text-align: center;
+}
+
+.header-banner h2 {
+	font-size: 2.26em;
+	margin-bottom: 1rem;
+	line-height: 2.5rem;
+}
+
+.header-banner p{
+	line-height: 2rem;
+}
+
+
+/* 內文容器 */
+.content {
+	text-align: center;
+	padding: 2em 1em;
+}
+
+/* 產品特色 */
+.feature {
+	max-width: 16.25em;
+	margin: 0 auto;
+}
+
+/* 平板和電腦版 */
+@media (min-width: 768px) {
+	.feature {
+		display: flex;
+		max-width: 100%;
+		gap: 3em;
+		padding: 1em;
+	}
+  }
+
+
+.feature ul {
+	margin-bottom: 2em;
+}
+
+.feature-title {
+	font-size: 1.4em;
+	line-height: 2rem;
+	font-weight: 600;
+	margin: 2em 0;
+	color: #3D1101;
+	text-align: center;
+}
+
+.feature-img {
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+}
+
+.feature-img img {
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.feature-item {
+	font-size: 1.3em;
+	color: #3D1101;
+	margin-bottom: 0.8em;
+}
+
+.feature-intro {
+	text-align: left;
+	font-size: 1.2em;
+	color: #3D1101;
+	margin: 1em 0;
+}
+
+
+/* 今日主廚 */
+.main-chef {
+	background-color: #3D1101;
+	max-width: 100%;
+}
+
+.main-chef img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.main-chef-intro {
+	color: #EFE9E7;
+	padding: 2em;
+}
+
+.main-chef-intro h3 {
+	font-size: 1.25em;
+	padding-bottom: 0.25em;
+}
+
+.main-chef-intro h4 {
+	padding-bottom: 1.15em;
+}
+
+.main-chef-intro p {
+	line-height: 1.25;
+}
+
+/* 平板和電腦版 */
+@media (min-width: 768px) {
+	.main-chef {
+		display: flex;
+		justify-content: space-evenly;
+		max-width: 100%;
+		padding: 0 1em;
+	}
+
+	.main-chef-intro {
+		width: 50%;
+		padding: 2em 1em;
+		align-self: center;
+	}
+
+  }
+
+  @media (min-width: 1024px) {
+	.main-chef-intro {
+		padding: 2em 2em;
+	}
+  }
+
+
+/* 顧客評論 */
+.reviews-list {
+	max-width: 16.25em;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 1em;
+}
+
+/* 平板和電腦版 */
+@media (min-width: 768px) {
+	.reviews > ul {
+		display: flex;
+		max-width: 100%;
+		gap: 3em;
+		padding: 1em;
+	}
+  }
+
+
+.reviews-list img {
+	display: block;
+	border-radius: 50%;
+	overflow: hidden;
+	min-width: 67px;
+	height: 67px;
+	object-fit: cover;
+}
+
+.reviews-title {
+	font-size: 1.4em;
+	line-height: 2rem;
+	font-weight: 600;
+	margin: 2em 0;
+	color: #3D1101;
+	text-align: center;
+}
+
+.reviews-name {
+	font-size: 1.25em;
+	font-weight: 600;
+	color: #3D1101;
+	margin: 20px 0;
+}
+
+.reviews-content {
+	text-align: left;
+	font-size: 1.15em;
+	line-height: 1.7em;
+	color: #3D1101;
+	margin: 1em 0;
+}
+
+.reviews-intro {
+	text-align: left;
+	font-size: 1.15em;
+	color: #3D1101;
+	opacity: 75%;
+	margin: 1em 0;
+	text-align: end;
+}
+
+/* 訂位區域 */
+
+.reservation {
+	background-color: rgba(250, 250, 250, 0.7);
+	padding: 1em;
+}
+
+.reservation h3 {
+	font-size: 1.4em;
+	line-height: 2rem;
+	font-weight: 600;
+	margin: 2em 0;
+	color: #3D1101;
+	text-align: center;
+}
+
+.reservation img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+
+/* 訂位表單 */
+form {
+	max-width: 100%;
+	margin: 0 auto;
+}
+  
+label {
+	margin-bottom: 0.5em;
+	display: inline-block;
+	color: #3D1101;
+}
+  
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom: 0.75em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+input[type="radio"] {
+	margin-right: 0.25em;
+}
+
+input[type="submit"] {
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.input-cancel {
+	background-color: rgba(0,0,0,0.35);
+}
+
+.input-check {
+	background-color: rgba(245,108,35,1);
+}
+
+
+.input-cancel:hover {
+	background-color: rgba(0, 0, 0, 0.6); /* 背景變深 */
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* 增加陰影 */
+}
+
+.input-check:hover {
+	background-color: rgb(255, 89, 0); /* 背景變亮 */
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* 增加輕微陰影 */
+}
+
+.input-cancel:active,
+.input-check:active {
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* 減弱陰影，模擬按壓效果 */
+	transform: scale(0.95); /* 當按住時縮小按鈕，模擬按壓 */
+}
+
+.radio-group {
+	display: flex;
+	align-items: center;
+}
+
+.radio-group label {
+	margin: 5px 10px 0 0;
+	display: inline-block;
+}
+
+
+
+
+
+

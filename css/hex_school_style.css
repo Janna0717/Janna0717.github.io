@@ -49,14 +49,20 @@ table {
 
 /* 以上 CSS reset  */
 
+/* 將所有元素及其伺服元素都套用 box-sizing: border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 *{
     font-family: 'Microsoft JhengHei UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    box-sizing: border-box; /* 設置所有元素使用 border-box 模型 */
 }
 
 .wrap{
     margin: 0 auto;
-    width: 1920px;
+    width: 100%;
     background-color: #FFFFFF;
 }
 
@@ -67,7 +73,7 @@ table {
 }
 
 .link_item{
-    margin-right: 405px;
+    margin-right: 21%;
     padding-top: 8px;
     padding-bottom: 8px;
     display: flex;
@@ -170,23 +176,23 @@ table {
 }
 
 .swiper {
-    width: 1920px;
+    width: 100%;
     height: 390px;
   }
 
 .banner{
+    width: 100%;
     position: relative;
 }
 
 .banner img{
-    width: 1920px;
-    height: 390px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
 .banner_decoration{
-    width: 1920px;
-    height: 139px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.45);
     position: absolute;
     top: 125px;
@@ -199,6 +205,7 @@ table {
     font-weight: 700;
     line-height: 43px;
     margin-top: 27px;
+    margin-bottom: 27px;
     margin-left: 498px;
     z-index: 10000;
 }
