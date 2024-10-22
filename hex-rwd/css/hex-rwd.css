@@ -458,16 +458,31 @@ input[type="submit"] {
 	margin: 1em 0;
 }
 
+.footer p {
+	color: #3D1101;
+}
+
 .footer ul {
 	list-style-type: disc;
 	margin: 1em;
 }
 
-.footer p {
+.footer li {
 	color: #3D1101;
 }
 
-.footer a {
+.footer-info {
+	color: #3D1101;
+	text-decoration: none;
+}
+
+.footer-info:hover {
+	color: #6b301a;
+	text-decoration: underline;
+
+}
+
+.footer-logo {
 	display: block;
 	text-align: right;
 }
@@ -483,6 +498,20 @@ input[type="submit"] {
 	margin: 0.25em;
 }
 
+.fa-google:hover,
+.fa-google:active {
+	color: rgb(255, 0, 51);
+}
+
+.fa-square-twitter:hover,
+.fa-square-twitter:active {
+	color: rgb(14, 156, 222);
+}
+
+.fa-square-facebook:hover,
+.fa-square-facebook:active {
+	color: rgb(0, 109, 212);
+}
 
 
 
