@@ -513,6 +513,19 @@ input[type="submit"] {
 	color: rgb(0, 109, 212);
 }
 
+/* 平板和電腦版 */
+@media (min-width: 768px) {
+	.footer {
+		display: flex;
+		justify-content: space-around;
+		gap: 5em;
+	}
+
+	.icon-rwd {
+		align-self: flex-end;
+	}
+
+  }
 
 
 
