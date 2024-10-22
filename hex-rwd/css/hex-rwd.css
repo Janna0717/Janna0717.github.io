@@ -444,6 +444,44 @@ input[type="submit"] {
 	display: inline-block;
 }
 
+/* footer */
+.footer {
+	max-width: 100%;
+	margin: 2em;
+	padding: 1em;
+}
+
+.footer h3 {
+	font-size: 1.4em;
+	line-height: 2rem;
+	color: #3D1101;
+	margin: 1em 0;
+}
+
+.footer ul {
+	list-style-type: disc;
+	margin: 1em;
+}
+
+.footer p {
+	color: #3D1101;
+}
+
+.footer a {
+	display: block;
+	text-align: right;
+}
+
+.icon-container {
+	display: flex;
+	justify-content: end;
+}
+
+.icon-container a{
+	color: #3D1101;
+	font-size: 1.5em;
+	margin: 0.25em;
+}
 
 
 
