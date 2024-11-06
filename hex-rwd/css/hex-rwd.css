@@ -103,8 +103,65 @@ body {
 	z-index: 1000;
 }
 
-.nav-bar i {
-	color: #fff;	
+
+/* 一般樣式 */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+	transition: color 0.1s ease, border-bottom 0.1s ease;
+}
+
+.nav-menu a:hover {
+    color: #efe9e7;
+    border-bottom: 1.5px solid #efe9e7;
+}
+
+/* 手機版樣式 */
+.menu-icon {
+    display: none;
+}
+
+/* RWD 設置 */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* 手機版隱藏選單 */
+    }
+    
+    .menu-icon {
+        display: block; /* 顯示漢堡選單 */
+        font-size: 1.5em;
+        color: #fff;
+    }
+}
+
+/* TOP 按鈕 */
+.top_button{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #3D1101;
+    border-radius: 50%;
+    background-color: #3D1101;
+    text-align: center;
+    font-style: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.top_button:hover{
+    background-color: #efe9e7;
+    color: #3D1101;
+    cursor: pointer;
 }
 
 /* 上半部封面 */
@@ -498,20 +555,32 @@ input[type="submit"] {
 	margin: 0.25em;
 }
 
-.fa-google:hover,
-.fa-google:active {
+.fa-google {
 	color: rgb(255, 0, 51);
 }
 
-.fa-square-twitter:hover,
-.fa-square-twitter:active {
+.fa-square-twitter {
 	color: rgb(14, 156, 222);
 }
 
-.fa-square-facebook:hover,
-.fa-square-facebook:active {
+.fa-square-facebook {
 	color: rgb(0, 109, 212);
 }
+
+.icon-btn {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-btn:hover {
+    background-color: #cfcfcf;
+    transform: scale(1.1);
+}
+
+
 
 /* 平板和電腦版 */
 @media (min-width: 768px) {
