@@ -19,55 +19,188 @@
     <meta name="twitter:image" content="https://janna0717.github.io/images/header_background.png">
     <!-- <meta name="twitter:site" content="@YourTwitterHandle"> -->
 
-    <title>James Front-End Developer</title>
+    <title>James Portfolio Website</title>
 
-    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="/css/portfolio_style.css">
+    <!-- 引入fontawesome -->
+    <script src="https://kit.fontawesome.com/ccdff99b7f.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <div class="wrap">   
-        <!-- 左側個人資料 開始 -->
-        <div class="header">
-            <div class="inner">
-                <img src="images/myphoto.png" alt="my_photo">    
-                <h1>
-                    James YU
-                    <br>
-                    HTML 5．CSS 3．jQuery．JavaScript
-                    <br>
-                    Keep Learning
-                </h1>    
-            </div>
-            <div class="footer">
+    <header class="header">
+        <a href="#" class="logo"><span>James Yu</span></a>
 
-            </div>
-  
-        </div>
-        <!-- 左側個人資料 結束 -->
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
 
-        <!-- 右側主要內容 開始 -->
-        <div class="content">
-            <h2>Projects</h2>
-            <hr>
-            <div class="projects-container">
-                <div class="projects-item">
-                    <a href="https://janna0717.github.io/hex-school/index.html">Hex-school</a>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+
+        <button class="visit-btn">Visit Github</button>
+
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="/images/myphoto.png" alt="myphoto">
+
+            <div class="info-box">
+
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>James Yu</h1>
+                    <span>Frontend Developer</span>
                 </div>
-                <div class="projects-item">
-                    <a href="https://janna0717.github.io/hex-rwd/index.html">Hex-RWD</a>
+
+                <div class="btn-group">
+                    <div class="btn">Download CV</div>
+                    <div class="btn">Contact</div>
+                </div>
+
+                <div class="socials">
+                    <i class="fa-brands fa-square-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
                 </div>
 
             </div>
-        </div>
-        <!-- 右側主要內容結束 -->
 
-        <!-- 最末端預留空間 開始 -->
-        <div class="footer">
         </div>
-        <!-- 最末端預留空間結束 -->
+    </section>
+
+    <section id="experience" class="experience">
+
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Frontend Development</span>
+                    <h3>5 Years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eum.</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-code"></i>
+                    <span>Graphic Design</span>
+                    <h3>2 Years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eum.</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-laptop"></i>
+                    <span>System Desing</span>
+                    <h3>2 Years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eum.</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Content Manager</span>
+                    <h3>1 Years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eum.</p>
+                </div>
+            </div>
+
+            <img src="/images/myphoto.png" alt="myphoto">
+        </div>
+
+
+
+    </section>
+
+    <section id="projects" class="projects">
+
+        <h2 class="section-title">Recent Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="projects-card">
+                <img src="/images/projects-1.png" alt="projects-1">
+                <h3>Project X</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid porro excepturi animi sequi illo.</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+
+            <div class="projects-card">
+                <img src="/images/projects-2.png" alt="projects-2">
+                <h3>Project Y</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid porro excepturi animi sequi illo.</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+
+            <div class="projects-card">
+                <img src="/images/projects-3.png" alt="projects-3">
+                <h3>Project Z</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid porro excepturi animi sequi illo.</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="input">
+                <input type="text" placeholder="example@email.com">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="btn">Submit</div>
+        </div>
+
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
         
-    </div>
-    <!-- <a href="hex-school/index.html">hex-school</a> -->
+        <p class="copyright">© 2024 James Yu | All Rights Reserved.</p>
+    </footer>
 
+
+
+    <script src="/script/portfolio_all.js"></script>
 </body>
 </html>
